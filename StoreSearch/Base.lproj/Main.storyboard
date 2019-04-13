@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="htq-z6-Slf">
-                                <rect key="frame" x="0.0" y="76" width="320" height="492"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="McR-pV-j4F"/>
@@ -40,9 +40,9 @@
                             <constraint firstItem="9L2-fo-yvG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7ZK-kr-iFc"/>
                             <constraint firstItem="htq-z6-Slf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9UY-Bf-obt"/>
                             <constraint firstItem="9L2-fo-yvG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Acx-jb-10N"/>
-                            <constraint firstItem="htq-z6-Slf" firstAttribute="top" secondItem="9L2-fo-yvG" secondAttribute="bottom" id="ErI-ze-mlj"/>
                             <constraint firstItem="htq-z6-Slf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JhA-Jo-Ewe"/>
                             <constraint firstItem="htq-z6-Slf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T73-fS-6si"/>
+                            <constraint firstItem="htq-z6-Slf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ztY-iZ-bwi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
