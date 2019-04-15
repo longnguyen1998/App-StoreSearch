@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7884F7A02264D0CA0048BDBD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884F79F2264D0CA0048BDBD /* DetailViewController.swift */; };
+		7884F7A22264D6200048BDBD /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884F7A12264D6200048BDBD /* DimmingPresentationController.swift */; };
 		789D7DFD2261F9CE00561BE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D7DFC2261F9CE00561BE1 /* AppDelegate.swift */; };
 		789D7DFF2261F9CE00561BE1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D7DFE2261F9CE00561BE1 /* SearchViewController.swift */; };
 		789D7E022261F9CE00561BE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789D7E002261F9CE00561BE1 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7884F79F2264D0CA0048BDBD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7884F7A12264D6200048BDBD /* DimmingPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		789D7DF92261F9CE00561BE1 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		789D7DFC2261F9CE00561BE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		789D7DFE2261F9CE00561BE1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				789D7DFE2261F9CE00561BE1 /* SearchViewController.swift */,
 				789D7E302262229900561BE1 /* SearchResultCell.swift */,
 				789D7E2C226214D100561BE1 /* SearchResult.swift */,
+				7884F7A12264D6200048BDBD /* DimmingPresentationController.swift */,
+				7884F79F2264D0CA0048BDBD /* DetailViewController.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -153,8 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				789D7DFF2261F9CE00561BE1 /* SearchViewController.swift in Sources */,
+				7884F7A22264D6200048BDBD /* DimmingPresentationController.swift in Sources */,
 				789D7E2D226214D100561BE1 /* SearchResult.swift in Sources */,
 				789D7E312262229900561BE1 /* SearchResultCell.swift in Sources */,
+				7884F7A02264D0CA0048BDBD /* DetailViewController.swift in Sources */,
 				789D7DFD2261F9CE00561BE1 /* AppDelegate.swift in Sources */,
 				789F75A32264AE550018185E /* UIImageView+DownloadImage.swift in Sources */,
 			);
