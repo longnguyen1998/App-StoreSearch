@@ -10,6 +10,8 @@
 		785F4AA92265CB5500B3DC8E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AA82265CB5500B3DC8E /* GradientView.swift */; };
 		785F4AAB2265D0AA00B3DC8E /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AAA2265D0AA00B3DC8E /* BounceAnimationController.swift */; };
 		785F4AAD2265D61700B3DC8E /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AAC2265D61700B3DC8E /* SlideOutAnimationController.swift */; };
+		785F4AAF2265DA6C00B3DC8E /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AAE2265DA6C00B3DC8E /* LandscapeViewController.swift */; };
+		785F4AB12265E06D00B3DC8E /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AB02265E06D00B3DC8E /* FadeOutAnimationController.swift */; };
 		7884F7A02264D0CA0048BDBD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884F79F2264D0CA0048BDBD /* DetailViewController.swift */; };
 		7884F7A22264D6200048BDBD /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884F7A12264D6200048BDBD /* DimmingPresentationController.swift */; };
 		789D7DFD2261F9CE00561BE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D7DFC2261F9CE00561BE1 /* AppDelegate.swift */; };
@@ -28,6 +30,8 @@
 		785F4AA82265CB5500B3DC8E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		785F4AAA2265D0AA00B3DC8E /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		785F4AAC2265D61700B3DC8E /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
+		785F4AAE2265DA6C00B3DC8E /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		785F4AB02265E06D00B3DC8E /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
 		7884F79F2264D0CA0048BDBD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7884F7A12264D6200048BDBD /* DimmingPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		789D7DF92261F9CE00561BE1 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +93,8 @@
 				785F4AA82265CB5500B3DC8E /* GradientView.swift */,
 				785F4AAA2265D0AA00B3DC8E /* BounceAnimationController.swift */,
 				785F4AAC2265D61700B3DC8E /* SlideOutAnimationController.swift */,
+				785F4AAE2265DA6C00B3DC8E /* LandscapeViewController.swift */,
+				785F4AB02265E06D00B3DC8E /* FadeOutAnimationController.swift */,
 				7884F79F2264D0CA0048BDBD /* DetailViewController.swift */,
 			);
 			path = StoreSearch;
@@ -169,9 +175,11 @@
 			files = (
 				789D7DFF2261F9CE00561BE1 /* SearchViewController.swift in Sources */,
 				7884F7A22264D6200048BDBD /* DimmingPresentationController.swift in Sources */,
+				785F4AB12265E06D00B3DC8E /* FadeOutAnimationController.swift in Sources */,
 				789D7E2D226214D100561BE1 /* SearchResult.swift in Sources */,
 				789D7E312262229900561BE1 /* SearchResultCell.swift in Sources */,
 				785F4AAB2265D0AA00B3DC8E /* BounceAnimationController.swift in Sources */,
+				785F4AAF2265DA6C00B3DC8E /* LandscapeViewController.swift in Sources */,
 				7884F7A02264D0CA0048BDBD /* DetailViewController.swift in Sources */,
 				789D7DFD2261F9CE00561BE1 /* AppDelegate.swift in Sources */,
 				785F4AA92265CB5500B3DC8E /* GradientView.swift in Sources */,
