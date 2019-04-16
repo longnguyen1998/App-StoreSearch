@@ -13,6 +13,7 @@ class LandscapeViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     
     private var firstTime = true
+    private var downloads = [URLSessionDownloadTask]()
     var searchResults = [SearchResult]()
 
     override func viewDidLoad() {
@@ -71,16 +72,7 @@ class LandscapeViewController: UIViewController {
             tileButtons(searchResults)
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
     private func tileButtons(_ searchResults: [SearchResult]) {
         var columnsPerpage = 6
         var rowsPerpage = 3
@@ -130,8 +122,11 @@ class LandscapeViewController: UIViewController {
         var column = 0
         var x = marginX
         
-        for (index, _) in searchResults.enumerated() {
-            let button = UIButton(type: .system)
+        for (index, result) in searchResults.enumerated() {
+            let button = UIButton(type: .custom)
+            downloadImage(for: result, adnPlaceOn: button)
+            button.setBackgroundImage(UIImage(named: "LandscapeButton"), for: .normal)
+//            let button = UIButton(type: .system)
             button.backgroundColor = UIColor.white
             button.setTitle("\(index)", for: .normal)
             button.frame = CGRect(
@@ -167,6 +162,28 @@ class LandscapeViewController: UIViewController {
         pageControl.numberOfPages = numPages
         pageControl.currentPage = 0
     }
+    
+    private func downloadImage(for searchResult: SearchResult, adnPlaceOn button: UIButton) {
+        if let url = URL(string: searchResult.imageSmall) {
+            let task = URLSession.shared.downloadTask(with: url) {
+                [weak button] url, response, error in
+                
+                if error == nil,
+                let url = url,
+                let data = try? Data(contentsOf: url),
+                let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        if let button = button {
+                            button.setImage(image, for: .normal)
+                        }
+                    }
+                }
+            }
+            
+            task.resume()
+            downloads.append(task)
+        }
+    }
 
 }
 
@@ -176,5 +193,6 @@ extension LandscapeViewController: UIScrollViewDelegate {
         let page = Int((scrollView.contentOffset.x + width / 2) / width)
         pageControl.currentPage = page
     }
+    
 }
 
