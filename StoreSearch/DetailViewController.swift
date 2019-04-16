@@ -51,6 +51,8 @@ class DetailViewController: UIViewController {
         if searchResult != nil {
             updateUI()
         }
+        
+        view.backgroundColor = UIColor.clear
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -119,6 +121,20 @@ extension DetailViewController: UIViewControllerTransitioningDelegate {
         return DimmingPresentationController(presentedViewController: presented,
                                              presenting: presenting)
     }
+    
+    func animationController(forPresented presented: UIViewController,
+                             presenting: UIViewController,
+                             source: UIViewController)
+    -> UIViewControllerAnimatedTransitioning? {
+        return BounceAnimationController()
+    }
+    
+    func animationController(
+        forDismissed dismissed: UIViewController)
+    -> UIViewControllerAnimatedTransitioning? {
+        return SlideOutAnimationController()
+    }
+    
 }
 
 extension DetailViewController: UIGestureRecognizerDelegate {
@@ -126,5 +142,6 @@ extension DetailViewController: UIGestureRecognizerDelegate {
                            shouldReceive touch: UITouch) -> Bool {
         return (touch.view === self.view)
     }
+    
 }
 
