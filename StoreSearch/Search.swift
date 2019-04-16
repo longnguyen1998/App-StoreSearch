@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 typealias SearchComplete = (Bool) -> Void
@@ -55,9 +56,7 @@ class Search {
         if !text.isEmpty {
             dataTask?.cancel()
             
-//            isLoading = true
-//            hasSearched = true
-//            searchResults = []
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
             state = .loading
             
             let url = iTunesURL(searchText: text, category: category)
@@ -85,32 +84,18 @@ class Search {
                         newState = .results(searchResults)
                     }
                     success = true
-//                    self.searchResults = self.parse(data: data)
-//                    self.searchResults.sort(by: <)
-//
-//                    print("Success!")
-//                    self.isLoading = false
-////                    return
-//                    success = true
                 }
-                
-//                if !success {
-//                    self.hasSearched = false
-//                    self.isLoading = false
-//                }
                 
                 DispatchQueue.main.async {
                     self.state = newState
                     completion(success)
                 }
-                
-//                print("Failure! \(response!)")
-//                self.hasSearched = false
-//                self.isLoading = false
             })
             
             dataTask?.resume()
         }
+        
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
     
     // MARK: iTunes URL
