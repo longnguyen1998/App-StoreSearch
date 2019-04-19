@@ -10,6 +10,8 @@
 		7850F2B32269D21C0088BE10 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7850F2B52269D21C0088BE10 /* NothingFoundCell.xib */; };
 		7850F2B82269D2310088BE10 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7850F2BA2269D2310088BE10 /* LoadingCell.xib */; };
 		7850F2BD2269D23D0088BE10 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7850F2BF2269D23D0088BE10 /* SearchResultCell.xib */; };
+		7850F2C22269D8710088BE10 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7850F2C42269D8710088BE10 /* Localizable.strings */; };
+		7850F2C82269E2E30088BE10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7850F2CA2269E2E30088BE10 /* InfoPlist.strings */; };
 		785F4AA92265CB5500B3DC8E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AA82265CB5500B3DC8E /* GradientView.swift */; };
 		785F4AAB2265D0AA00B3DC8E /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AAA2265D0AA00B3DC8E /* BounceAnimationController.swift */; };
 		785F4AAD2265D61700B3DC8E /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AAC2265D61700B3DC8E /* SlideOutAnimationController.swift */; };
@@ -34,6 +36,10 @@
 		7850F2B92269D2310088BE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
 		7850F2BC2269D2360088BE10 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LoadingCell.strings"; sourceTree = "<group>"; };
 		7850F2BE2269D23D0088BE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchResultCell.xib; sourceTree = "<group>"; };
+		7850F2C32269D8710088BE10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7850F2C52269D9BF0088BE10 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7850F2C92269E2E30088BE10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7850F2CB2269E2F70088BE10 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		785F4AA82265CB5500B3DC8E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		785F4AAA2265D0AA00B3DC8E /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		785F4AAC2265D61700B3DC8E /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 				7850F2BF2269D23D0088BE10 /* SearchResultCell.xib */,
 				7850F2B52269D21C0088BE10 /* NothingFoundCell.xib */,
 				7850F2BA2269D2310088BE10 /* LoadingCell.xib */,
+				7850F2C42269D8710088BE10 /* Localizable.strings */,
+				7850F2CA2269E2E30088BE10 /* InfoPlist.strings */,
 				789D7DFC2261F9CE00561BE1 /* AppDelegate.swift */,
 				789F75A22264AE550018185E /* UIImageView+DownloadImage.swift */,
 				789D7DFE2261F9CE00561BE1 /* SearchViewController.swift */,
@@ -166,6 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				789D7E042261F9CF00561BE1 /* Assets.xcassets in Resources */,
+				7850F2C82269E2E30088BE10 /* InfoPlist.strings in Resources */,
+				7850F2C22269D8710088BE10 /* Localizable.strings in Resources */,
 				7850F2B82269D2310088BE10 /* LoadingCell.xib in Resources */,
 				7850F2BD2269D23D0088BE10 /* SearchResultCell.xib in Resources */,
 				7850F2B32269D21C0088BE10 /* NothingFoundCell.xib in Resources */,
@@ -223,6 +233,24 @@
 				7850F2BE2269D23D0088BE10 /* Base */,
 			);
 			name = SearchResultCell.xib;
+			sourceTree = "<group>";
+		};
+		7850F2C42269D8710088BE10 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7850F2C32269D8710088BE10 /* en */,
+				7850F2C52269D9BF0088BE10 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		7850F2CA2269E2E30088BE10 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7850F2C92269E2E30088BE10 /* en */,
+				7850F2CB2269E2F70088BE10 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		789D7E002261F9CE00561BE1 /* Main.storyboard */ = {

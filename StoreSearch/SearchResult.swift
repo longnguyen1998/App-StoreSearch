@@ -9,6 +9,22 @@
 import Foundation
 
 
+private let typeForKind = [
+    "album": NSLocalizedString("Album", comment: "Localized kind: Album"),
+    "audiobook": NSLocalizedString("Audio Book",
+                                   comment: "Localized kind: Audio Book"),
+    "book": NSLocalizedString("Book", comment: "Localized kind: Book"),
+    "ebook": NSLocalizedString("E-Book", comment: "Localized kind: E-Book"),
+    "feature-movie": NSLocalizedString("Movie", comment: "Localized kind: Movie"),
+    "music-video": NSLocalizedString("Music Video",
+                                     comment: "Localized kind: Music Video"),
+    "podcast": NSLocalizedString("Podcast", comment: "Localized kind: Podcast"),
+    "software": NSLocalizedString("App", comment: "Localized kind: Software"),
+    "song": NSLocalizedString("Song", comment: "Localized kind: Song"),
+    "tv-episode": NSLocalizedString("TV Episode",
+                                    comment: "Localized kind: TV Episode")
+]
+
 class ResultArray: Codable {
     var resultCount = 0
     var results = [SearchResult]()
@@ -68,21 +84,38 @@ class SearchResult: Codable, CustomStringConvertible {
     
     var type: String {
         let kind = self.kind ?? "audiobook"
-        switch kind {
-        case "album": return "Album"
-        case "audiobook": return "Audio Book"
-        case "book": return "Book"
-        case "ebook": return "E-Book"
-        case "feature-movie": return "Movie"
-        case "music-video": return "Music Video"
-        case "podcast": return "Podcast"
-        case "software": return "App"
-        case "song": return "Song"
-        case "tv-episode": return "TV Episode"
-        default: break
-        }
-        return "Unknown"
+        return typeForKind[kind] ?? kind
     }
+    
+//    var type: String {
+//        let kind = self.kind ?? "audiobook"
+//
+//        switch kind {
+//        case "album":
+//            return NSLocalizedString("Album", comment: "Localized kind: Album")
+//        case "audiobook":
+//            return NSLocalizedString("Audio Book",
+//                                     comment: "Localized kind: Audio Book")
+//        case "book":
+//            return NSLocalizedString("Book", comment: "Localized kind: Book")
+//        case "ebook":
+//            return NSLocalizedString("E-Book", comment: "Localized kind: E-Book")
+//        case "feature-movie":
+//            return NSLocalizedString("Movie", comment: "Localized kind: Feature Movie")
+//        case "music-video":
+//            return NSLocalizedString("Music Video", comment: "Localized kind: Music Video")
+//        case "podcast":
+//            return NSLocalizedString("Podcast", comment: "Localized kind: Podcast")
+//        case "software":
+//            return NSLocalizedString("App", comment: "Localized kind: Software")
+//        case "song":
+//            return NSLocalizedString("Song", comment: "Localized kind: Song")
+//        case "tv-episode":
+//            return NSLocalizedString("TV Episode", comment: "Localized kind: TV Episode")
+//        default:
+//            return kind
+//        }
+//    }
     
     var artist: String {
         return artistName ?? ""

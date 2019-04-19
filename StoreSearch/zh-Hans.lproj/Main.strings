@@ -24,7 +24,7 @@
 "bqd-ie-NpG.text" = "Artist Name";
 
 /* Class = "UILabel"; text = "Type"; ObjectID = "neI-Np-JSV"; */
-"neI-Np-JSV.text" = "种类";
+"neI-Np-JSV.text" = "类别";
 
 /* Class = "UILabel"; text = "Genre Value"; ObjectID = "nnW-HG-rH1"; */
 "nnW-HG-rH1.text" = "Genre Value";
