@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7850F2B32269D21C0088BE10 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7850F2B52269D21C0088BE10 /* NothingFoundCell.xib */; };
+		7850F2B82269D2310088BE10 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7850F2BA2269D2310088BE10 /* LoadingCell.xib */; };
+		7850F2BD2269D23D0088BE10 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7850F2BF2269D23D0088BE10 /* SearchResultCell.xib */; };
 		785F4AA92265CB5500B3DC8E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AA82265CB5500B3DC8E /* GradientView.swift */; };
 		785F4AAB2265D0AA00B3DC8E /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AAA2265D0AA00B3DC8E /* BounceAnimationController.swift */; };
 		785F4AAD2265D61700B3DC8E /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AAC2265D61700B3DC8E /* SlideOutAnimationController.swift */; };
@@ -20,14 +23,17 @@
 		789D7E022261F9CE00561BE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789D7E002261F9CE00561BE1 /* Main.storyboard */; };
 		789D7E042261F9CF00561BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789D7E032261F9CF00561BE1 /* Assets.xcassets */; };
 		789D7E2D226214D100561BE1 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D7E2C226214D100561BE1 /* SearchResult.swift */; };
-		789D7E2F22621DF000561BE1 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789D7E2E22621DF000561BE1 /* SearchResultCell.xib */; };
 		789D7E312262229900561BE1 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D7E302262229900561BE1 /* SearchResultCell.swift */; };
-		789D7E332262267F00561BE1 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789D7E322262267E00561BE1 /* NothingFoundCell.xib */; };
 		789F75A32264AE550018185E /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F75A22264AE550018185E /* UIImageView+DownloadImage.swift */; };
-		78B6AD292264903D00B1E60D /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78B6AD282264903D00B1E60D /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7850F2B42269D21C0088BE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		7850F2B62269D22B0088BE10 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		7850F2B72269D22B0088BE10 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/NothingFoundCell.strings"; sourceTree = "<group>"; };
+		7850F2B92269D2310088BE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
+		7850F2BC2269D2360088BE10 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LoadingCell.strings"; sourceTree = "<group>"; };
+		7850F2BE2269D23D0088BE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchResultCell.xib; sourceTree = "<group>"; };
 		785F4AA82265CB5500B3DC8E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		785F4AAA2265D0AA00B3DC8E /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		785F4AAC2265D61700B3DC8E /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
@@ -43,11 +49,8 @@
 		789D7E032261F9CF00561BE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		789D7E082261F9CF00561BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		789D7E2C226214D100561BE1 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		789D7E2E22621DF000561BE1 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		789D7E302262229900561BE1 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
-		789D7E322262267E00561BE1 /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		789F75A22264AE550018185E /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
-		78B6AD282264903D00B1E60D /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +86,9 @@
 				789D7E032261F9CF00561BE1 /* Assets.xcassets */,
 				789D7E082261F9CF00561BE1 /* Info.plist */,
 				789D7E002261F9CE00561BE1 /* Main.storyboard */,
-				789D7E2E22621DF000561BE1 /* SearchResultCell.xib */,
-				789D7E322262267E00561BE1 /* NothingFoundCell.xib */,
-				78B6AD282264903D00B1E60D /* LoadingCell.xib */,
+				7850F2BF2269D23D0088BE10 /* SearchResultCell.xib */,
+				7850F2B52269D21C0088BE10 /* NothingFoundCell.xib */,
+				7850F2BA2269D2310088BE10 /* LoadingCell.xib */,
 				789D7DFC2261F9CE00561BE1 /* AppDelegate.swift */,
 				789F75A22264AE550018185E /* UIImageView+DownloadImage.swift */,
 				789D7DFE2261F9CE00561BE1 /* SearchViewController.swift */,
@@ -145,6 +148,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 789D7DF02261F9CE00561BE1;
 			productRefGroup = 789D7DFA2261F9CE00561BE1 /* Products */;
@@ -162,9 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				789D7E042261F9CF00561BE1 /* Assets.xcassets in Resources */,
-				78B6AD292264903D00B1E60D /* LoadingCell.xib in Resources */,
-				789D7E2F22621DF000561BE1 /* SearchResultCell.xib in Resources */,
-				789D7E332262267F00561BE1 /* NothingFoundCell.xib in Resources */,
+				7850F2B82269D2310088BE10 /* LoadingCell.xib in Resources */,
+				7850F2BD2269D23D0088BE10 /* SearchResultCell.xib in Resources */,
+				7850F2B32269D21C0088BE10 /* NothingFoundCell.xib in Resources */,
 				789D7E022261F9CE00561BE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,10 +199,37 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		7850F2B52269D21C0088BE10 /* NothingFoundCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7850F2B42269D21C0088BE10 /* Base */,
+				7850F2B72269D22B0088BE10 /* zh-Hans */,
+			);
+			name = NothingFoundCell.xib;
+			sourceTree = "<group>";
+		};
+		7850F2BA2269D2310088BE10 /* LoadingCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7850F2B92269D2310088BE10 /* Base */,
+				7850F2BC2269D2360088BE10 /* zh-Hans */,
+			);
+			name = LoadingCell.xib;
+			sourceTree = "<group>";
+		};
+		7850F2BF2269D23D0088BE10 /* SearchResultCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7850F2BE2269D23D0088BE10 /* Base */,
+			);
+			name = SearchResultCell.xib;
+			sourceTree = "<group>";
+		};
 		789D7E002261F9CE00561BE1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				789D7E012261F9CE00561BE1 /* Base */,
+				7850F2B62269D22B0088BE10 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -210,6 +241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -271,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
