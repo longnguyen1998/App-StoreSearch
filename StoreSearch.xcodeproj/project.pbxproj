@@ -40,6 +40,11 @@
 		7850F2C52269D9BF0088BE10 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7850F2C92269E2E30088BE10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7850F2CB2269E2F70088BE10 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		7850F2CC2269E9080088BE10 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		7850F2CE2269E9080088BE10 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/NothingFoundCell.strings; sourceTree = "<group>"; };
+		7850F2CF2269E9080088BE10 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LoadingCell.strings; sourceTree = "<group>"; };
+		7850F2D02269E9080088BE10 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7850F2D12269E9080088BE10 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		785F4AA82265CB5500B3DC8E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		785F4AAA2265D0AA00B3DC8E /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		785F4AAC2265D61700B3DC8E /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
@@ -157,6 +162,7 @@
 				en,
 				Base,
 				"zh-Hans",
+				ru,
 			);
 			mainGroup = 789D7DF02261F9CE00561BE1;
 			productRefGroup = 789D7DFA2261F9CE00561BE1 /* Products */;
@@ -214,6 +220,7 @@
 			children = (
 				7850F2B42269D21C0088BE10 /* Base */,
 				7850F2B72269D22B0088BE10 /* zh-Hans */,
+				7850F2CE2269E9080088BE10 /* ru */,
 			);
 			name = NothingFoundCell.xib;
 			sourceTree = "<group>";
@@ -223,6 +230,7 @@
 			children = (
 				7850F2B92269D2310088BE10 /* Base */,
 				7850F2BC2269D2360088BE10 /* zh-Hans */,
+				7850F2CF2269E9080088BE10 /* ru */,
 			);
 			name = LoadingCell.xib;
 			sourceTree = "<group>";
@@ -240,6 +248,7 @@
 			children = (
 				7850F2C32269D8710088BE10 /* en */,
 				7850F2C52269D9BF0088BE10 /* zh-Hans */,
+				7850F2D02269E9080088BE10 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -249,6 +258,7 @@
 			children = (
 				7850F2C92269E2E30088BE10 /* en */,
 				7850F2CB2269E2F70088BE10 /* zh-Hans */,
+				7850F2D12269E9080088BE10 /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -258,6 +268,7 @@
 			children = (
 				789D7E012261F9CE00561BE1 /* Base */,
 				7850F2B62269D22B0088BE10 /* zh-Hans */,
+				7850F2CC2269E9080088BE10 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
