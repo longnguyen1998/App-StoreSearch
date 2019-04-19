@@ -12,6 +12,7 @@
 		7850F2BD2269D23D0088BE10 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7850F2BF2269D23D0088BE10 /* SearchResultCell.xib */; };
 		7850F2C22269D8710088BE10 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7850F2C42269D8710088BE10 /* Localizable.strings */; };
 		7850F2C82269E2E30088BE10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7850F2CA2269E2E30088BE10 /* InfoPlist.strings */; };
+		7850F2D3226A11260088BE10 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850F2D2226A11260088BE10 /* MenuViewController.swift */; };
 		785F4AA92265CB5500B3DC8E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AA82265CB5500B3DC8E /* GradientView.swift */; };
 		785F4AAB2265D0AA00B3DC8E /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AAA2265D0AA00B3DC8E /* BounceAnimationController.swift */; };
 		785F4AAD2265D61700B3DC8E /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4AAC2265D61700B3DC8E /* SlideOutAnimationController.swift */; };
@@ -45,6 +46,12 @@
 		7850F2CF2269E9080088BE10 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LoadingCell.strings; sourceTree = "<group>"; };
 		7850F2D02269E9080088BE10 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7850F2D12269E9080088BE10 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7850F2D2226A11260088BE10 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		7850F2D4226A157A0088BE10 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LoadingCell.strings"; sourceTree = "<group>"; };
+		7850F2D5226A157A0088BE10 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		7850F2D6226A157A0088BE10 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/NothingFoundCell.strings"; sourceTree = "<group>"; };
+		7850F2D8226A157B0088BE10 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		7850F2D9226A157B0088BE10 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		785F4AA82265CB5500B3DC8E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		785F4AAA2265D0AA00B3DC8E /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		785F4AAC2265D61700B3DC8E /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
@@ -109,6 +116,7 @@
 				785F4AB02265E06D00B3DC8E /* FadeOutAnimationController.swift */,
 				785F4AA82265CB5500B3DC8E /* GradientView.swift */,
 				785F4AAE2265DA6C00B3DC8E /* LandscapeViewController.swift */,
+				7850F2D2226A11260088BE10 /* MenuViewController.swift */,
 				785F4AB22265F23D00B3DC8E /* Search.swift */,
 				789D7E2C226214D100561BE1 /* SearchResult.swift */,
 				789D7E302262229900561BE1 /* SearchResultCell.swift */,
@@ -163,6 +171,7 @@
 				Base,
 				"zh-Hans",
 				ru,
+				"zh-Hant",
 			);
 			mainGroup = 789D7DF02261F9CE00561BE1;
 			productRefGroup = 789D7DFA2261F9CE00561BE1 /* Products */;
@@ -199,6 +208,7 @@
 				785F4AB32265F23D00B3DC8E /* Search.swift in Sources */,
 				789D7DFF2261F9CE00561BE1 /* SearchViewController.swift in Sources */,
 				7884F7A22264D6200048BDBD /* DimmingPresentationController.swift in Sources */,
+				7850F2D3226A11260088BE10 /* MenuViewController.swift in Sources */,
 				785F4AB12265E06D00B3DC8E /* FadeOutAnimationController.swift in Sources */,
 				789D7E2D226214D100561BE1 /* SearchResult.swift in Sources */,
 				789D7E312262229900561BE1 /* SearchResultCell.swift in Sources */,
@@ -221,6 +231,7 @@
 				7850F2B42269D21C0088BE10 /* Base */,
 				7850F2B72269D22B0088BE10 /* zh-Hans */,
 				7850F2CE2269E9080088BE10 /* ru */,
+				7850F2D6226A157A0088BE10 /* zh-Hant */,
 			);
 			name = NothingFoundCell.xib;
 			sourceTree = "<group>";
@@ -231,6 +242,7 @@
 				7850F2B92269D2310088BE10 /* Base */,
 				7850F2BC2269D2360088BE10 /* zh-Hans */,
 				7850F2CF2269E9080088BE10 /* ru */,
+				7850F2D4226A157A0088BE10 /* zh-Hant */,
 			);
 			name = LoadingCell.xib;
 			sourceTree = "<group>";
@@ -249,6 +261,7 @@
 				7850F2C32269D8710088BE10 /* en */,
 				7850F2C52269D9BF0088BE10 /* zh-Hans */,
 				7850F2D02269E9080088BE10 /* ru */,
+				7850F2D9226A157B0088BE10 /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -259,6 +272,7 @@
 				7850F2C92269E2E30088BE10 /* en */,
 				7850F2CB2269E2F70088BE10 /* zh-Hans */,
 				7850F2D12269E9080088BE10 /* ru */,
+				7850F2D8226A157B0088BE10 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -269,6 +283,7 @@
 				789D7E012261F9CE00561BE1 /* Base */,
 				7850F2B62269D22B0088BE10 /* zh-Hans */,
 				7850F2CC2269E9080088BE10 /* ru */,
+				7850F2D5226A157A0088BE10 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

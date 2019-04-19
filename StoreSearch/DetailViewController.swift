@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 
 class DetailViewController: UIViewController {
@@ -109,6 +110,14 @@ class DetailViewController: UIViewController {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
+    
+    // MARK:- Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowMenu" {
+            let controller = segue.destination as! MenuViewController
+            controller.delegate = self
+        }
+    }
 
     // MARK:- UI
     func updateUI() {
@@ -185,5 +194,29 @@ extension DetailViewController: UIGestureRecognizerDelegate {
         return (touch.view === self.view)
     }
     
+}
+
+extension DetailViewController: MenuViewControllerDelegate {
+    func menuViewControllerSendEmail(_ controller: MenuViewController) {
+        if MFMailComposeViewController.canSendMail() {
+            let controller = MFMailComposeViewController()
+            controller.mailComposeDelegate = self
+            
+            controller.setSubject(
+                NSLocalizedString("Support Request", comment: "Email subject"))
+            controller.setToRecipients(["your@email-address-here.com"])
+            controller.modalPresentationStyle = .formSheet
+            
+            self.present(controller, animated: true, completion: nil)
+        }
+    }
+}
+
+extension DetailViewController: MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController,
+                               didFinishWith result: MFMailComposeResult,
+                               error: Error?) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
