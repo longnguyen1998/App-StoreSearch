@@ -27,16 +27,24 @@ class LandscapeViewController: UIViewController {
         // Remove constraints for page control
         pageControl.removeConstraints(pageControl.constraints)
         pageControl.translatesAutoresizingMaskIntoConstraints = true
+        pageControl.numberOfPages = 0
         
         // Remove constraints for scroll view
         scrollView.removeConstraints(scrollView.constraints)
         scrollView.translatesAutoresizingMaskIntoConstraints = true
         
-        view.backgroundColor = UIColor(
-            patternImage: UIImage(named: "LandscapeBackground")!)
-//        scrollView.contentSize = CGSize(width: 1000, height: 1000)
+//        view.backgroundColor = UIColor(
+//            patternImage: UIImage(named: "LandscapeBackground")!)
         
-        pageControl.numberOfPages = 0
+//        scrollView.contentSize = CGSize(width: 1000, height: 1000)
+    }
+    
+    deinit {
+        print("deinit \(self)")
+        
+        for task in downloads {
+            task.cancel()
+        }
     }
     
     // MARK:- Actions
@@ -162,7 +170,7 @@ class LandscapeViewController: UIViewController {
             button.setBackgroundImage(UIImage(named: "LandscapeButton"), for: .normal)
 //            let button = UIButton(type: .system)
             button.backgroundColor = UIColor.white
-            button.setTitle("\(index)", for: .normal)
+//            button.setTitle("\(index)", for: .normal)
             button.frame = CGRect(
                 x: x + paddingHorz,
                 y: marginY + CGFloat(row) * itemHeight + paddingVert,

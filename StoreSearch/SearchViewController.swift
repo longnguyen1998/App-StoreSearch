@@ -73,7 +73,8 @@ class SearchViewController: UIViewController {
         
         let rect = UIScreen.main.bounds
         
-        if (rect.width == 736 && rect.height == 414) || (rect.width == 414 && rect.height == 736) {
+        if ((rect.width == 736 || rect.width == 896) && rect.height == 414)
+        || (rect.width == 414 && (rect.height == 736 || rect.height == 896)) {
             if presentedViewController != nil {
                 dismiss(animated: true, completion: nil)
             }
