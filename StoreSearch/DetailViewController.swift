@@ -198,16 +198,18 @@ extension DetailViewController: UIGestureRecognizerDelegate {
 
 extension DetailViewController: MenuViewControllerDelegate {
     func menuViewControllerSendEmail(_ controller: MenuViewController) {
-        if MFMailComposeViewController.canSendMail() {
-            let controller = MFMailComposeViewController()
-            controller.mailComposeDelegate = self
-            
-            controller.setSubject(
-                NSLocalizedString("Support Request", comment: "Email subject"))
-            controller.setToRecipients(["your@email-address-here.com"])
-            controller.modalPresentationStyle = .formSheet
-            
-            self.present(controller, animated: true, completion: nil)
+        dismiss(animated: true) {
+            if MFMailComposeViewController.canSendMail() {
+                let controller = MFMailComposeViewController()
+                
+                controller.setSubject(
+                    NSLocalizedString("Support Request", comment: "Email subject"))
+                controller.setToRecipients(["your@email-address-here.com"])
+                controller.mailComposeDelegate = self
+                controller.modalPresentationStyle = .formSheet
+                
+                self.present(controller, animated: true, completion: nil)
+            }
         }
     }
 }
