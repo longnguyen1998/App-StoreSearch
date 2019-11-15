@@ -24,11 +24,11 @@ class Search {
             case .all:
                 return ""
             case .music:
-                return "musicTrack"
+                return "music"
             case .software:
                 return "software"
             case .ebooks:
-                return "ebooks"
+                return "books"
             }
         }
     }
@@ -113,7 +113,9 @@ class Search {
 //        let urlString = "https://itunes.apple.com/search?" +
 //            "term=\(encodedText)&limit=200&entity=\(kind)" +
 //            "&lang=\(language)&country=\(countryCode)"
-        let urlString = "https://itunes.apple.com/search?term=\(encodedText ?? String())&entity=software,iPadSoftware&limit=10"
+        //https://www.apple.com/us/search/music?src=globalnav
+        
+        let urlString = "https://itunes.apple.com/search?term=\(encodedText ?? String())&entity=\(kind),iPadSoftware&limit=10"
         let url = URL(string: urlString)
         
         print("URL: \(url!)")
